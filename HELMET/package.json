@@ -1,15 +1,17 @@
 {
   "name": "helmet",
   "version": "0.0.1",
+  "type": "module"
   "description": "A destiny 2 news extension that combines all the relevant news sources into one centralized space.\"",
   "main": "dist/tabs.js",
   "scripts": {
     "start": "tsc && node dist/tabs.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Q4kK",
   "license": "ISC",
   "dependencies": {
+    "node-fetch": "^3.3.1",
     "typescript": "^5.1.3"
   },
   "devDependencies": {
