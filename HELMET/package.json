@@ -2,7 +2,7 @@
   "name": "helmet",
   "version": "0.0.1",
   "description": "A destiny 2 news extension that combines all the relevant news sources into one centralized space.\"",
-  "main": "dist/tabs.js",
+  "main": "dist/request.js",
   "scripts": {
     "start": "tsc && node dist/tabs.js",
     "test": "echo \"Error: no test specified\" && exit 1"
