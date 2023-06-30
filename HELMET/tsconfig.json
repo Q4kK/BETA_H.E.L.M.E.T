@@ -1,11 +1,9 @@
 {
 	"compilerOptions": {
-	  "module": "commonjs",
-	  "esModuleInterop": true,
-	  "target": "es6",
-	  "moduleResolution": "node",
+	  "module": "nodenext",
+	  "target": "es2022",
 	  "sourceMap": true,
 	  "outDir": "dist"
 	},
-	"lib": ["es2015"]
+	"lib": ["es2022"]
 }
