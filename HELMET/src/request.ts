@@ -22,7 +22,7 @@ function latest_twab(News: postInfo[]): string {
 
 async function main() {
   let headers = new Headers();
-  headers.append("x-api-key", fs.readFileSync('../Bungie_Key.txt').toString().trim());
+  headers.append("x-api-key", fs.readFileSync('./Bungie_Key.txt').toString().trim());
   const bungie_response = await get_json(headers);
   console.log(latest_twab(bungie_response["Response"]["NewsArticles"]));
 }
