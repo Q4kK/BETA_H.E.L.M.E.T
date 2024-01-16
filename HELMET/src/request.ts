@@ -31,6 +31,7 @@ async function main() {
   const bungie_response = await get_json(headers);
   document.body.innerHTML = "<h1>" + (latest_twab(bungie_response["Response"]["NewsArticles"])) + "</h1>";
   document.body.innerHTML = "<h1>" + (destiny_update(bungie_response["Response"]["NewsArticles"])) + "</h1>";
+
 }
 
 main();
