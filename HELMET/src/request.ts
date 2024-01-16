@@ -29,8 +29,8 @@ async function main() {
   let headers = new Headers();
   headers.append("x-api-key", fs.readFileSync('./Bungie_Key.txt').toString().trim());
   const bungie_response = await get_json(headers);
-  console.log(latest_twab(bungie_response["Response"]["NewsArticles"]));
-  console.log(destiny_update(bungie_response["Response"]["NewsArticles"]));
+  document.body.innerHTML = "<h1>" + (latest_twab(bungie_response["Response"]["NewsArticles"])) + "</h1>";
+  document.body.innerHTML = "<h1>" + (destiny_update(bungie_response["Response"]["NewsArticles"])) + "</h1>";
 }
 
 main();
